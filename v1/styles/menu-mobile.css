@@ -29,9 +29,9 @@
     height: 100vh;
     overflow-y: auto;
   }
-  /* #Dcursor{
+  #Dcursor{
     display: none;
-  } */
+  }
   .menu-itens li {
     padding-top: 15px;
   }
