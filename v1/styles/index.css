@@ -85,7 +85,7 @@ main{
     font-weight: 600;
     letter-spacing: 3px;
 }
-.principal .cursor{
+/* .principal .cursor{
     width: 3px;
     height: 42px;
     background-color: white;
@@ -107,4 +107,4 @@ main{
     100% {
       opacity: 0;
     }
-  }
+  } */
