@@ -1,24 +1,25 @@
 @charset "UTF-8";
 
-:root{
-    --fundo01: #1e1f22;
+:root {
+  --fundo01: #1e1f22;
 
-    --azul02: #25b6c7;
-    --azul03: #00d2df;
-    --azul04: #21e1f2;
-    --azul05: #6dd3d6;
-    --azul06: #a8e8e8;
+  --principal01: #21e1f2;
+  --principal02: #00ff00;
 
-    --roxo01: #6518b4;
-    --roxo02: #8d1cd9; 
-    --roxo03: #9932cc;
-    --roxo04: #b044f8;   
-    --roxo05: #d699ff;
-    
+  --azul01: #25b6c7;
+  --azul02: #00d2df;
+  --azul03: #6dd3d6;
+  --azul04: #a8e8e8;
+
+  --roxo01: #6518b4;
+  --roxo02: #8d1cd9;
+  --roxo03: #9932cc;
+  --roxo04: #b044f8;
+  --roxo05: #d699ff;
 }
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }

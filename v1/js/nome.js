@@ -1,6 +1,6 @@
 function initTyping() {
     let letter = 0;
-    const text = '     {Kalel Matheus};';
+    const text = '     Kalel Matheus';
 
     function typeWriter() {
         if(letter < text.length) {
