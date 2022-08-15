@@ -31,7 +31,6 @@
   }
   .menu-itens li {
     padding-top: 15px;
-    width: auto;
   }
   .menu-itens #x{
     margin-top: 10%;
@@ -81,7 +80,6 @@
   }
 
   header {
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: space-around;
   }
 }
