@@ -5,7 +5,7 @@
     padding: 5px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .btn-mobile {
     display: block;
     z-index: 3;
@@ -18,25 +18,41 @@
     left: 0px;
     background-color: rgba(30, 31, 34, 0.9);
     height: 0px;
-    transition: 0.6s;
+    transition: 0.7s ease-in-out;
     text-align: center;
     visibility: 0;
-    overflow-y: hidden;
+    overflow: hidden;
     z-index: 2;
   }
   .Dnav.active .menu-itens {
     visibility: 1;
     height: 100vh;
-    overflow-y: auto;
   }
+  /* .menu-itens {
+    display: block;
+    position: fixed;
+    width: 0px;
+    top: 0px;
+    right: 0px;
+    background-color: rgba(30, 31, 34, 0.9);
+    height: 100vh;
+    transition: .5s ease-in-out;
+    overflow: hidden;
+    z-index: 2;
+    text-align: center;
+  }
+  .Dnav.active .menu-itens {
+    width: 100%;
+    overflow-y: auto;
+  } */
   #Dcursor{
     display: none;
   }
   .menu-itens li {
-    padding-top: 15px;
+    padding-top: 20px;
   }
   .menu-itens #x{
-    margin-top: 10%;
+    margin-top: 30%;
   }
   .menu-itens a::after {
     border-bottom: 3px solid var(--principal01);
@@ -44,7 +60,7 @@
   .btn-mobile {
     display: flex;
     position: relative;
-    padding: 5px 10px;
+    padding: 5px 10x;
     font-size: 15px;
     border: none;
     background: none;
@@ -55,7 +71,7 @@
   .btn-mobile span {
     position: absolute;
     display: block;
-    height: 5px;
+    height: 3px;
     width: 100%;
     border-radius: 30px;
     background-color: var(--principal01);
