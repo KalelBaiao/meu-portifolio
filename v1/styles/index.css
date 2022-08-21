@@ -70,9 +70,9 @@ main {
   letter-spacing: 3px;
 }
 /* section 1 */
-.principal, .sobre-mim {
+.principal, .sobre-mim, .container-contato {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 85vh;
   z-index: 1;
@@ -161,10 +161,10 @@ main {
 .aviso-scroll ion-icon {
   width: 20px;
   height: 50px;
-  animation: scroll-down 3s infinite forwards;
+  animation: scroll 3s infinite forwards;
 }
 
-@keyframes scroll-down {
+@keyframes scroll {
   0% {
     opacity: 0;
     transform: translate3d(0, -30px, 0);
@@ -183,11 +183,15 @@ main {
  /* section 2 */
  .sobre-mim{
   background-color: #131212;
+  flex-direction: column;
+  /* z-index: -1;
+  position: relative; */
+  width: 100%;
  }
  .content-sobre{
   display: flex;
   max-width: 1000px;
-  min-height: 600px;
+  /* min-height: 600px; */
  }
  .sobre-text{
   display: flex;
@@ -233,4 +237,117 @@ p {
   text-indent: 2em;
   margin-top: 5px;
   line-height: 30px;
+}
+.btn-social-sobre {
+  margin-top: 40px;
+  display: flex;
+  width: 300px;
+  justify-content: center;
+  gap: 30px;
+}
+.btn-social-sobre a {
+  width: 150px;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+.btn-social-sobre a:hover{
+  transform: translate(-4px, -4px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
+  transition: transform .4s;
+}
+.btn-social-sobre ion-icon{
+  width: 70px;
+  height: 70px;
+}
+#logo-instagram{
+  border: 2px solid var(--roxo02); 
+}
+#logo-facebook{
+  border: 2px solid var(--azul02);
+}
+
+/* section 3 */
+
+.container-contato {
+  width: 100%;
+  min-height: 75%;
+  padding: 10px;
+}
+.artigo-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  /* height: 100%; */
+  height: 700px;
+  border-radius: 16px;
+  padding: 0px 20px;
+  margin: auto;
+  background-color: black;
+}
+
+h1,
+h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.form-contato {
+  width: 100%;
+  max-width: 500px;
+  font-size: 20px;
+}
+
+.form-contato label,
+.form-contato input,
+.form-contato textarea,
+.form-contato button {
+  width: 100%;
+  display: block;
+}
+
+.form-contato label {
+  color: white;
+  line-height: 1;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.form-contato input
+, .form-contato textarea {
+  font: inherit;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 8px;
+}
+.form-contato textarea {
+  height: 200px;
+  resize: none;
+}
+/* #arquivo{
+  padding: 0px;
+  border-radius: 0px;
+} */
+.form-contato button {
+  display: block;
+  padding: 1rem;
+  background-color: #4343e4;
+  color: white;
+  font: inherit;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media (max-width: 700px) {
+  .container-contato h1 {
+    font-size: 30px;
+  }
 }

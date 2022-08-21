@@ -8,7 +8,7 @@
 @media (max-width: 750px) {
   .btn-mobile {
     display: block;
-    z-index: 3;
+    z-index: 100;
   }
   .menu-itens {
     display: block;
@@ -22,12 +22,13 @@
     text-align: center;
     visibility: 0;
     overflow: hidden;
-    z-index: 2;
+    z-index: 100;
   }
   .Dnav.active .menu-itens {
     visibility: 1;
     height: 100vh;
   }
+ 
   /* .menu-itens {
     display: block;
     position: fixed;
