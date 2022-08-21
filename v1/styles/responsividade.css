@@ -1,1 +1,13 @@
 @charset "UTF-8";
+
+@media (max-width: 750px){
+    .sobre-img{
+        display: none;
+    }
+    /* .content-sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    } */
+}

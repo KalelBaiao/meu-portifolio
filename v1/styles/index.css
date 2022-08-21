@@ -4,6 +4,15 @@ body {
   background-color: var(--fundo01);
 }
 
+/* header */
+.menu-fixed{
+  width: 100%;
+  display: block;
+  top: 0;
+  z-index: 2;
+  height: 80px;
+  padding-bottom: 10px;
+}
 header {
   position: fixed;
   width: 100%;
@@ -52,23 +61,22 @@ a {
 .menu-itens a:hover::after {
   transform: scaleX(1);
 }
-
+/* main */
 main {
   color: white;
   width: 100%;
   height: 100%;
   background-color: var(--fundo01);
-  padding: 20px;
   letter-spacing: 3px;
 }
-.principal {
+/* section 1 */
+.principal, .sobre-mim {
   display: flex;
   justify-content: space-around;
-  padding-top: 10%;
   align-items: center;
-  height: 70vh;
-  top: 70px;
+  height: 85vh;
   z-index: 1;
+  /* padding: 0% 20%; */
 }
 .apresentacao {
   display: flex;
@@ -95,9 +103,9 @@ main {
   background-color: white;
   display: inline-block;
   top: 3px;
-  animation: blink .6s infinite alternate;
+  animation: cursor .6s infinite alternate;
 }
-@keyframes blink {
+@keyframes cursor {
   0% {
     opacity: 1;
   }
@@ -123,8 +131,10 @@ main {
   padding: 15px;
   border-radius: 10px;
 }
-.btn-social a:hover {
-    transition: .6s;
+.btn-social a:hover{
+  transform: translate(-4px, -4px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
+  transition: transform .4s;
 }
 .btn-social img{
   width: 70px;
@@ -136,8 +146,91 @@ main {
 #logo-github{
   border: 2px solid var(--azul02);
 }
-.btn-social a:hover{
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
-    transition: transform .4s;
+.aviso-scroll{
+  display: flex;
+  position: absolute;
+  bottom: 70px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  width: 100px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.aviso-scroll ion-icon {
+  width: 20px;
+  height: 50px;
+  animation: scroll-down 3s infinite forwards;
+}
+
+@keyframes scroll-down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 5px, 0);
+  }
+}
+ /* section 2 */
+ .sobre-mim{
+  background-color: #131212;
+ }
+ .content-sobre{
+  display: flex;
+  max-width: 1000px;
+  min-height: 600px;
+ }
+ .sobre-text{
+  display: flex;
+  width: 100%;
+  align-items: center;
+ }
+ .sobre-img{
+  display: flex;
+  align-items: center;
+ }
+ .sobre-img img{
+  width: 100%;
+  border-radius: 100%;
+  padding: 0px 30px;
+  transition: 1s;
+ }
+ .sobre-img img:hover{
+  transform: scale(1.05);
+ }
+
+ .text-eu {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 40px;
+  position: relative;
+  width: 100%;
+  /* margin-bottom: 300px; */
+}
+.text-eu h1,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.text-eu h1 {
+  font-size: 2em;
+  padding: 15px;
+  text-align: left;
+  font-family: var(--fonte01);
+  font-weight: 500;
+}
+.text-eu p {
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 2em;
+  margin-top: 5px;
+  line-height: 30px;
 }

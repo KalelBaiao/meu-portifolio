@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kalel Baião</title>
-    <link rel="stylesheet" href="styles/geral.css" />
-    <link rel="stylesheet" href="styles/index.css" />
-    <link rel="stylesheet" href="styles/menu-mobile.css" />
-    <link rel="stylesheet" href="styles/responsividade.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kalel Baião</title>
+  <link rel="stylesheet" href="styles/geral.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+  <link rel="stylesheet" href="styles/menu-mobile.css" />
+  <link rel="stylesheet" href="styles/responsividade.css" />
+</head>
+
+<body>
+  <section class="menu-fixed">
     <header>
       <div class="logo">
         <a href="index.html">&lsaquo;KB/&rsaquo;</a>
       </div>
       <nav class="Dnav">
         <ul class="menu-itens">
-          <a href="index.html"><li id="x">Home</li></a>
-          <a href="#"><li>Sobre</li></a>
-          <a href="#"><li>Experiências</li></a>
-          <a href="#"><li>Projetos</li></a>
-          <a href="#"><li>Contato</li></a>
+          <a href="#Dprincipal">
+            <li id="x">Home</li>
+          </a>
+          <a href="#Dsobre-mim">
+            <li>Sobre</li>
+          </a>
+          <a href="#">
+            <li>Experiências</li>
+          </a>
+          <a href="#">
+            <li>Projetos</li>
+          </a>
+          <a href="#">
+            <li>Contato</li>
+          </a>
         </ul>
         <div class="menu-mobile">
           <button class="btn-mobile">
@@ -32,36 +45,53 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section class="principal">
-        <div class="apresentacao">
-          <h1>
-            Olá, eu sou <span class="nome"></span>
-            <span class="cursor" id="Dcursor"></span>
-          </h1>
-          <p>Full-Stack Developer</p>
-          <div class="btn-social">
-            <a
-              href="https://github.com/KalelBaiao"
-              target="_blank"
-              id="logo-github"
-              ><img
-                src="img/logo-github03.png"
-                alt="logo-github"
-                id="img-github"
-            /></a>
-            <a href="#" id="logo-linkedin"
-              ><img
-                src="img/logo-linkedin03.png"
-                alt="logo-linkedin"
-                id="img-linkedin"
-            /></a>
-          </div>
+  </section>
+  <main>
+    <section class="principal" id="Dprincipal">
+      <div class="apresentacao">
+        <h1>
+          Olá, eu sou <span class="nome"></span>
+          <span class="cursor" id="Dcursor"></span>
+        </h1>
+        <p>Full-Stack Developer</p>
+        <div class="btn-social">
+          <a href="https://github.com/KalelBaiao" target="_blank" id="logo-github"><img src="img/logo-github03.png"
+              alt="logo-github" id="img-github" /></a>
+          <a href="#" id="logo-linkedin"><img src="img/logo-linkedin03.png" alt="logo-linkedin" id="img-linkedin" /></a>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      </div>
+      <div class="aviso-scroll"><a href="#Dsobre-mim">
+        <p>Scroll</p>
+      </a><ion-icon name="caret-down-outline"></ion-icon>
+        <div>
+    </section>
+
+
+    <section class="sobre-mim" id="Dsobre-mim">
+      <div class="content-sobre">
+        <article class="sobre-text">
+          <div class="text-eu">
+            <h1>Sobre Mim</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque atque ducimus veritatis beatae accusamus
+              voluptas. Sapiente iste fugiat qui ad voluptates esse adipisci minima saepe quia aperiam! Quidem, amet
+              temporibus! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam autem non alias reiciendis
+              officiis quisquam minima illo maiores ab reprehenderit fugiat eaque recusandae architecto sed aspernatur,
+              sint sit! Inventore, earum?</p>
+          </div>
+        </article>
+        <article class="sobre-img">
+          <img src="img/eu.jpeg" alt="foto-do-criador">
+        </article>
+      </div>
+      <!-- <div class="btn-social">
+        <a href="https://github.com/KalelBaiao" target="_blank" id="logo-github"><img src="img/logo-github03.png"
+            alt="logo-github" id="img-github" /></a>
+        <a href="#" id="logo-linkedin"><img src="img/logo-linkedin03.png" alt="logo-linkedin" id="img-linkedin" /></a>
+      </div> -->
+    </section>
+  </main>
+  <footer></footer>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
       var option = {
         strings: ["<strong>Kalel Matheus</strong>"],
@@ -73,8 +103,11 @@
       var typed = new Typed(".nome", option);
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <script src="js/nome.js"></script>
-    <script src="js/menu-mobile.js"></script>
-  </body>
+  <script src="js/nome.js"></script>
+  <script src="js/menu-mobile.js"></script>
+</body>
+
 </html>

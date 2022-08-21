@@ -1,6 +1,9 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap");
 
 :root {
+  --fonte01: "Fondamento", "cursive";
+
   --fundo01: #1e1f22;
 
   --principal01: #21e1f2;
