@@ -5,7 +5,7 @@ body {
 }
 
 /* header */
-.menu-fixed{
+.menu-fixed {
   width: 100%;
   display: block;
   top: 0;
@@ -25,6 +25,7 @@ header {
   padding: 0px 20px;
   letter-spacing: 2px;
   color: white;
+  z-index: 100;
 }
 a {
   text-decoration: none;
@@ -70,13 +71,17 @@ main {
   letter-spacing: 3px;
 }
 /* section 1 */
-.principal, .sobre-mim, .container-contato {
+.principal,
+.sobre-mim,
+.container-contato {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 85vh;
+  min-height: 850px;
   z-index: 1;
   /* padding: 0% 20%; */
+  flex-direction: column;
 }
 .apresentacao {
   display: flex;
@@ -85,10 +90,10 @@ main {
   flex-direction: column;
 }
 .apresentacao h1 {
-  font-size: 50px;
+  font-size: 40px;
 }
 .apresentacao p {
-  font-size: 40px;
+  font-size: 30px;
   letter-spacing: 5px;
 }
 .principal span {
@@ -96,14 +101,14 @@ main {
   color: var(--principal01);
   font-weight: 600;
   letter-spacing: 3px;
+  font-size: 50px;
 }
-.principal .cursor{
-  width: 3px;
-  height: 42px;
+.principal .cursor {
+  width: 2px;
+  height: 40px;
   background-color: white;
   display: inline-block;
-  top: 3px;
-  animation: cursor .6s infinite alternate;
+  animation: cursor 0.6s infinite alternate;
 }
 @keyframes cursor {
   0% {
@@ -131,25 +136,26 @@ main {
   padding: 15px;
   border-radius: 10px;
 }
-.btn-social a:hover{
+.btn-social a:hover {
   transform: translate(-4px, -4px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
-.btn-social img{
+.btn-social img {
   width: 70px;
   height: 70px;
 }
-#logo-linkedin{
+#logo-linkedin {
   border: 2px solid var(--roxo02);
 }
-#logo-github{
+#logo-github {
   border: 2px solid var(--azul02);
 }
-.aviso-scroll{
+.aviso-scroll {
   display: flex;
-  position: absolute;
-  bottom: 70px;
+  position: relative;
+  bottom: 0px;
+  top: 20%;
   font-weight: bolder;
   letter-spacing: 2px;
   width: 100px;
@@ -157,6 +163,10 @@ main {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.aviso-scroll a {
+  display: flex;
+  position: static;
 }
 .aviso-scroll ion-icon {
   width: 20px;
@@ -167,7 +177,7 @@ main {
 @keyframes scroll {
   0% {
     opacity: 0;
-    transform: translate3d(0, -30px, 0);
+    transform: translate3d(0, -60px, 0);
   }
   30% {
     opacity: 0;
@@ -177,42 +187,42 @@ main {
   }
   100% {
     opacity: 0;
-    transform: translate3d(0, 5px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 }
- /* section 2 */
- .sobre-mim{
+/* section 2 */
+.sobre-mim {
   background-color: #131212;
   flex-direction: column;
   /* z-index: -1;
   position: relative; */
   width: 100%;
- }
- .content-sobre{
+}
+.content-sobre {
   display: flex;
   max-width: 1000px;
   /* min-height: 600px; */
- }
- .sobre-text{
+}
+.sobre-text {
   display: flex;
   width: 100%;
   align-items: center;
- }
- .sobre-img{
+}
+.sobre-img {
   display: flex;
   align-items: center;
- }
- .sobre-img img{
+}
+.sobre-img img {
   width: 100%;
   border-radius: 100%;
   padding: 0px 30px;
   transition: 1s;
- }
- .sobre-img img:hover{
+}
+.sobre-img img:hover {
   transform: scale(1.05);
- }
+}
 
- .text-eu {
+.text-eu {
   display: flex;
   flex-direction: column;
   padding: 0px 40px;
@@ -239,11 +249,12 @@ p {
   line-height: 30px;
 }
 .btn-social-sobre {
-  margin-top: 40px;
+  margin-top: 70px;
   display: flex;
-  width: 300px;
+  width: auto;
   justify-content: center;
   gap: 30px;
+  align-items: center;
 }
 .btn-social-sobre a {
   width: 150px;
@@ -251,27 +262,68 @@ p {
   border-radius: 10px;
   text-align: center;
 }
-.btn-social-sobre a:hover{
+.btn-social-sobre a:hover {
   transform: translate(-4px, -4px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
-  transition: transform .4s;
+  transition: transform 0.4s;
 }
-.btn-social-sobre ion-icon{
+.btn-intagram,
+.btn-facebook {
+  height: 100px;
+  width: 110px;
+  display: flex;
+  position: relative;
+}
+.btn-social-sobre ion-icon {
   width: 70px;
   height: 70px;
 }
-#logo-instagram{
-  border: 2px solid var(--roxo02); 
+#logo-instagram {
+  border: 2px solid var(--roxo02);
 }
-#logo-facebook{
-  border: 2px solid var(--azul02);
+#logo-instagram ion-icon {
+  background-image: linear-gradient(
+    -45deg,
+    var(--roxo01),
+    var(--roxo02),
+    rgb(255, 122, 144)
+  );
+  background-size: 200% 200%;
+  color: #131212;
+  border-radius: 20px;
+  animation: gradient 7s ease-out alternate infinite;
+}
+#logo-facebook {
+  border: 2px solid #006891;
+}
+#logo-facebook ion-icon {
+  background-image: linear-gradient(
+    -45deg,
+    #1616eb,
+    #006891,
+    var(--azul04)
+  );
+  background-size: 200% 200%;
+  color: #131212;
+  border-radius: 50%;
+  animation: gradient 7s ease-out alternate infinite;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
 }
 
 /* section 3 */
 
 .container-contato {
   width: 100%;
-  min-height: 75%;
   padding: 10px;
 }
 .artigo-contato {
@@ -282,14 +334,15 @@ p {
   width: 100%;
   max-width: 600px;
   /* height: 100%; */
-  height: 700px;
+  min-height: 700px;
   border-radius: 16px;
   padding: 0px 20px;
   margin: auto;
   background-color: black;
+  position: relative;
 }
 
-h1,
+.artigo-contato h1,
 h2 {
   font-size: 40px;
   color: white;
@@ -318,8 +371,8 @@ h2 {
   font-weight: bold;
 }
 
-.form-contato input
-, .form-contato textarea {
+.form-contato input,
+.form-contato textarea {
   font: inherit;
   padding: 10px;
   margin-bottom: 1rem;
@@ -347,7 +400,4 @@ h2 {
   transition: 0.2s;
 }
 @media (max-width: 700px) {
-  .container-contato h1 {
-    font-size: 30px;
-  }
 }

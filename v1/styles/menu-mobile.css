@@ -46,9 +46,6 @@
     width: 100%;
     overflow-y: auto;
   } */
-  #Dcursor{
-    display: none;
-  }
   .menu-itens li {
     padding-top: 20px;
   }
