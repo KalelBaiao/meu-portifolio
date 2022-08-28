@@ -73,7 +73,9 @@ main {
 /* section 1 */
 .principal,
 .sobre-mim,
-.container-contato {
+.container-contato,
+.container-skills {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,6 +84,7 @@ main {
   z-index: 1;
   /* padding: 0% 20%; */
   flex-direction: column;
+  padding: 10px;
 }
 .apresentacao {
   display: flex;
@@ -297,12 +300,7 @@ p {
   border: 2px solid #006891;
 }
 #logo-facebook ion-icon {
-  background-image: linear-gradient(
-    -45deg,
-    #1616eb,
-    #006891,
-    var(--azul04)
-  );
+  background-image: linear-gradient(-45deg, #1616eb, #006891, var(--azul04));
   background-size: 200% 200%;
   color: #131212;
   border-radius: 50%;
@@ -322,9 +320,12 @@ p {
 
 /* section 3 */
 
+
+
+/* section 4 */
+
 .container-contato {
-  width: 100%;
-  padding: 10px;
+  background-color: #131212;
 }
 .artigo-contato {
   display: flex;
