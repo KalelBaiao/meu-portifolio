@@ -79,8 +79,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85vh;
-  min-height: 850px;
+  height: 75vh;
+  min-height: 800px;
   z-index: 1;
   /* padding: 0% 20%; */
   flex-direction: column;
