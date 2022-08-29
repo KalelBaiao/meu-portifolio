@@ -69,7 +69,7 @@
   .btn-mobile span {
     position: absolute;
     display: block;
-    height: 3px;
+    height: 2px;
     width: 100%;
     border-radius: 30px;
     background-color: var(--principal01);
