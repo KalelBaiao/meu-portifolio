@@ -65,7 +65,6 @@
     cursor: pointer;
     height: 22px;
     width: 30px;
-    transform: translate(0, 0);
   }
   .btn-mobile span {
     left: 0;
