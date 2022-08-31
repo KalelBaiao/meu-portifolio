@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
 body {
   background-color: var(--fundo01);
 }
@@ -79,8 +84,8 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 75vh;
-  min-height: 800px;
+  height: calc(95vh - 80px);
+  min-height: 750px;
   z-index: 1;
   /* padding: 0% 20%; */
   flex-direction: column;
@@ -157,8 +162,7 @@ main {
 .aviso-scroll {
   display: flex;
   position: relative;
-  bottom: 0px;
-  top: 20%;
+  top: 25%;
   font-weight: bolder;
   letter-spacing: 2px;
   width: 100px;
@@ -169,7 +173,8 @@ main {
 }
 .aviso-scroll a {
   display: flex;
-  position: static;
+  position: absolute;
+  align-items: center;
 }
 .aviso-scroll ion-icon {
   width: 20px;
@@ -180,17 +185,17 @@ main {
 @keyframes scroll {
   0% {
     opacity: 0;
-    transform: translate3d(0, -60px, 0);
+    transform: translate3d(0, -40px, 0);
   }
   30% {
     opacity: 0;
   }
-  70% {
+  80% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-    transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, 5px, 0);
   }
 }
 /* section 2 */
@@ -294,7 +299,7 @@ p {
   background-size: 200% 200%;
   color: #131212;
   border-radius: 20px;
-  animation: gradient 7s ease-out alternate infinite;
+  animation: gradient 8s ease-out alternate infinite;
 }
 #logo-facebook {
   border: 2px solid #006891;
@@ -304,7 +309,7 @@ p {
   background-size: 200% 200%;
   color: #131212;
   border-radius: 50%;
-  animation: gradient 7s ease-out alternate infinite;
+  animation: gradient 8s ease-out alternate infinite;
 }
 @keyframes gradient {
   0% {
@@ -399,6 +404,4 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
-}
-@media (max-width: 700px) {
 }
