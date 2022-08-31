@@ -1,6 +1,9 @@
 const btnMobile = document.querySelector('.btn-mobile')
+const nav = document.querySelector('.Dnav')
 // console.log(btnMobile)
 btnMobile.addEventListener('click', () => {
-    const nav = document.querySelector('.Dnav')
     nav.classList.toggle('active')
 })
+function clickMenu(){
+    nav.classList.remove('active')
+}
