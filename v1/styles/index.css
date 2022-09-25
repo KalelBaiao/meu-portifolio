@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 85px;
 }
 
 body {
-  background-color: var(--fundo01);
+  background-color: var(--fundo01)
 }
 
 /* header */
@@ -18,6 +18,7 @@ body {
   height: 80px;
   padding-bottom: 10px;
 }
+
 header {
   position: fixed;
   width: 100%;
@@ -32,6 +33,7 @@ header {
   color: white;
   z-index: 100;
 }
+
 a {
   text-decoration: none;
   transition: 0.5s ease;
@@ -39,23 +41,28 @@ a {
   font-size: 1.1em;
   color: inherit;
 }
+
 .logo a {
   font-size: 25px;
   color: var(--principal01);
 }
+
 .logo a:hover {
   color: var(--roxo04);
 }
+
 .menu-itens {
   gap: 30px;
   display: flex;
   list-style: none;
   z-index: 2;
 }
+
 .menu-itens li {
   /* display: flex; */
   margin-top: 10px;
 }
+
 .menu-itens a::after {
   content: "";
   display: block;
@@ -64,9 +71,11 @@ a {
   transform: scaleX(0);
   transition: transform 0.5s ease;
 }
+
 .menu-itens a:hover::after {
   transform: scaleX(1);
 }
+
 /* main */
 main {
   color: white;
@@ -75,6 +84,7 @@ main {
   background-color: var(--fundo01);
   letter-spacing: 3px;
 }
+
 /* section 1 */
 .principal,
 .sobre-mim,
@@ -91,7 +101,8 @@ main {
   flex-direction: column;
   padding: 10px;
 }
-.container{
+
+.container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -101,21 +112,25 @@ main {
   z-index: 1;
   /* padding: 0% 20%; */
   gap: 100px;
-  
+
 }
+
 .apresentacao {
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
 }
+
 .apresentacao h1 {
   font-size: 40px;
 }
+
 .apresentacao p {
   font-size: 30px;
   letter-spacing: 5px;
 }
+
 .principal span {
   text-transform: uppercase;
   color: var(--principal01);
@@ -123,6 +138,7 @@ main {
   letter-spacing: 3px;
   font-size: 50px;
 }
+
 .principal .cursor {
   width: 2px;
   height: 40px;
@@ -130,20 +146,25 @@ main {
   display: inline-block;
   animation: cursor 0.6s infinite alternate;
 }
+
 @keyframes cursor {
   0% {
     opacity: 1;
   }
+
   40% {
     opacity: 1;
   }
+
   60% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 .btn-social {
   margin-top: 30px;
   display: flex;
@@ -151,42 +172,50 @@ main {
   justify-content: center;
   gap: 30px;
 }
+
 .btn-social a {
   width: 150px;
   padding: 15px;
   border-radius: 10px;
 }
+
 .btn-social a:hover {
   transform: translate(-4px, -4px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
   transition: transform 0.4s;
 }
+
 .btn-social img {
   width: 70px;
   height: 70px;
 }
+
 #logo-linkedin {
   border: 2px solid var(--roxo02);
 }
+
 #logo-github {
   border: 2px solid var(--azul02);
 }
 
-.torre-animation{
+.torre-animation {
   position: relative;
   transform: skewY(-15deg) translateX(50px) translateY(50px);
   animation: animateColor 2.5s linear infinite;
   margin: 0px 130px;
 }
-@keyframes animateColor{
-  0%{
+
+@keyframes animateColor {
+  0% {
     filter: hue-rotate(0deg);
   }
-  100%{
+
+  100% {
     filter: hue-rotate(360deg);
   }
 }
-.torre-animation::before{
+
+.torre-animation::before {
   content: '';
   position: absolute;
   top: 150px;
@@ -197,7 +226,8 @@ main {
   transform: skewX(45deg);
   filter: blur(20px);
 }
-.torre-animation span{
+
+.torre-animation span {
   position: relative;
   width: 200px;
   height: 20px;
@@ -208,22 +238,27 @@ main {
   animation: animate 10s ease-in-out infinite;
   animation-delay: calc(-1s * var(--i));
 }
-@keyframes  animate{
-  0%{
+
+@keyframes animate {
+  0% {
     transform: translateX(-50px);
   }
-  50%{
+
+  50% {
     transform: translateX(50px);
   }
-  100%{
+
+  100% {
     transform: translateX(-50px);
   }
 }
-.torre-animation span:hover{
+
+.torre-animation span:hover {
   background-color: #33a3ee;
   transition: 0s;
 }
-.torre-animation span:before{
+
+.torre-animation span:before {
   content: '';
   position: absolute;
   top: 0;
@@ -235,11 +270,13 @@ main {
   transform: skewY(45deg);
   transition: .5s;
 }
-.torre-animation span:hover:before{
+
+.torre-animation span:hover:before {
   background-color: #1f5378;
   transition: 0s;
 }
-.torre-animation span:after{
+
+.torre-animation span:after {
   content: '';
   position: absolute;
   top: -150px;
@@ -250,7 +287,8 @@ main {
   transform-origin: bottom;
   transform: skewX(45deg);
 }
-.torre-animation span:hover:after{
+
+.torre-animation span:hover:after {
   background: #2982b9;
   transition: 0s;
 }
@@ -266,11 +304,13 @@ main {
   justify-content: center;
   cursor: pointer;
 }
+
 .aviso-scroll a {
   display: flex;
   position: absolute;
   align-items: center;
 }
+
 .aviso-scroll ion-icon {
   width: 20px;
   height: 50px;
@@ -282,17 +322,21 @@ main {
     opacity: 0;
     transform: translate3d(0, -40px, 0);
   }
+
   30% {
     opacity: 0;
   }
+
   80% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
     transform: translate3d(0, 5px, 0);
   }
 }
+
 /* section 2 */
 .sobre-mim {
   background-color: #131212;
@@ -301,26 +345,31 @@ main {
   position: relative; */
   width: 100%;
 }
+
 .content-sobre {
   display: flex;
   max-width: 1000px;
   /* min-height: 600px; */
 }
+
 .sobre-text {
   display: flex;
   width: 100%;
   align-items: center;
 }
+
 .sobre-img {
   display: flex;
   align-items: center;
 }
+
 .sobre-img img {
   width: 100%;
   border-radius: 100%;
   padding: 0px 30px;
   transition: 1s;
 }
+
 .sobre-img img:hover {
   transform: scale(1.05);
 }
@@ -333,17 +382,20 @@ main {
   width: 100%;
   /* margin-bottom: 300px; */
 }
+
 .text-eu h1,
 p {
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .text-eu h1 {
   font-size: 2em;
   padding: 15px;
   text-align: left;
-  font-family: var(--fonte01);
+  font-family: var(--fonte02);
   font-weight: 500;
 }
+
 .text-eu p {
   font-size: 18px;
   text-align: justify;
@@ -351,6 +403,7 @@ p {
   margin-top: 5px;
   line-height: 30px;
 }
+
 .btn-social-sobre {
   margin-top: 70px;
   display: flex;
@@ -359,17 +412,20 @@ p {
   gap: 30px;
   align-items: center;
 }
+
 .btn-social-sobre a {
   width: 150px;
   padding: 15px;
   border-radius: 10px;
   text-align: center;
 }
+
 .btn-social-sobre a:hover {
   transform: translate(-4px, -4px);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.62);
   transition: transform 0.4s;
 }
+
 .btn-intagram,
 .btn-facebook {
   height: 100px;
@@ -377,28 +433,31 @@ p {
   display: flex;
   position: relative;
 }
+
 .btn-social-sobre ion-icon {
   width: 70px;
   height: 70px;
 }
+
 #logo-instagram {
   border: 2px solid var(--roxo02);
 }
+
 #logo-instagram ion-icon {
-  background-image: linear-gradient(
-    -45deg,
-    var(--roxo01),
-    var(--roxo02),
-    rgb(255, 122, 144)
-  );
+  background-image: linear-gradient(-45deg,
+      var(--roxo01),
+      var(--roxo02),
+      rgb(255, 122, 144));
   background-size: 200% 200%;
   color: #131212;
   border-radius: 20px;
   animation: gradient 8s ease-out alternate infinite;
 }
+
 #logo-facebook {
   border: 2px solid #006891;
 }
+
 #logo-facebook ion-icon {
   background-image: linear-gradient(-45deg, #1616eb, #006891, var(--azul04));
   background-size: 200% 200%;
@@ -406,13 +465,16 @@ p {
   border-radius: 50%;
   animation: gradient 8s ease-out alternate infinite;
 }
+
 @keyframes gradient {
   0% {
     background-position: 0 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0 50%;
   }
@@ -427,6 +489,7 @@ p {
 .container-contato {
   background-color: #131212;
 }
+
 .artigo-contato {
   display: flex;
   justify-content: center;
@@ -480,10 +543,12 @@ h2 {
   border: 1px solid transparent;
   border-radius: 8px;
 }
+
 .form-contato textarea {
   height: 200px;
   resize: none;
 }
+
 /* #arquivo{
   padding: 0px;
   border-radius: 0px;
@@ -499,4 +564,26 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.2s;
+}
+
+/* barra de rolagem */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #1b1b1b;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, var(--principal01), var(--roxo01));
+  border-radius: 50px;
+  background-size: cover;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #00bbc5;
 }
