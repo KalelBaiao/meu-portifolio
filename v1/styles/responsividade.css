@@ -1,13 +1,51 @@
 @charset "UTF-8";
 
-@media (max-width: 750px){
-    .sobre-img{
+
+@media (max-width: 900px) {
+    .container-card-skills {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .torre-animation{
         display: none;
     }
+}
+
+@media (max-width: 750px) {
+    .sobre-img {
+        display: none;
+    }
+
     /* .content-sobre{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 30px;
     } */
+}
+
+@media (max-width: 700px) {
+
+    .card-skills {
+        width: 155px;
+        height: 155px;
+        font-size: 15px;
+    }
+    .card-skills box-icon{
+        width: 55px;
+        height: 55px;
+        margin: -5px;
+      }
+    .card-skills p{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 600px){
+    .container-card-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-skills {
+        width: 180px;
+        height: 180px;
+    }
 }

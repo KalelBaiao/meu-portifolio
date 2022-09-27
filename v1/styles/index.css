@@ -83,6 +83,9 @@ main {
   height: 100%;
   background-color: var(--fundo01);
   letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* section 1 */
@@ -91,6 +94,7 @@ main {
 .container-contato,
 .container-skills {
   width: 100%;
+  /* min-width: 700px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -482,7 +486,69 @@ p {
 
 /* section 3 */
 
+.container-skills{
+  min-height: 900px;
+  /* min-width: 700px; */
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
 
+.informacoes-skills{
+  background-color: #131212;
+  width: 90%;
+  max-width: 500px;
+  height: 300px;
+  margin-right: 50px;
+  display: flex;
+  margin: 20px 0 30px 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+.informacoes-skills p{
+  font-weight: 600;
+}
+.container-card-skills{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.card-skills{
+  width: 200px;
+  height: 200px;
+  background-color: #131212;
+  padding: 30px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid transparent;
+}
+.card-skills:hover {
+  border: 1px solid var(--roxo01);
+  transition: .3s;
+  transform: scale(0.97);
+
+}
+
+.card-skills ion-icon, .card-skills box-icon{
+  width: 90px;
+  height: 90px;
+  color: var(--roxo02);
+}
+.card-skills box-icon{
+  margin: -8px;
+}
+.informacoes-principais{
+  margin-top: 10px;
+}
+.informacoes-principais p{
+  color: var(--roxo04);
+  font-weight: bold;
+  font-size: 15px;
+}
 
 /* section 4 */
 
